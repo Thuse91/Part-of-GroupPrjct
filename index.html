@@ -45,74 +45,131 @@ Left till here away at to whom past. Feelings laughing at no wondered repeated p
         </div>
         <!---main body of the content *main body*-->
         <div class="main-content">
-            <div class="temp-content">
-                Moments its musical age explain. But extremity sex now education concluded earnestly her continual. Oh furniture acuteness suspected continual ye something frankness. Add properly laughter sociable admitted desirous one has few stanhill. Opinion regular in perhaps another enjoyed no engaged he at. It conveying he continual ye suspected as necessary. Separate met packages shy for kindness. 
-Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. Advantages prosperous remarkably my inhabiting so reasonably be if. Too any appearance announcing impossible one. Out mrs means heart ham tears shall power every. 
-Unpleasant nor diminution excellence apartments imprudence the met new. Draw part them he an to he roof only. Music leave say doors him. Tore bred form if sigh case as do. Staying he no looking if do opinion. Sentiments way understood end partiality and his. 
-Wrong do point avoid by fruit learn or in death. So passage however besides invited comfort elderly be me. Walls began of child civil am heard hoped my. Satisfied pretended mr on do determine by. Old post took and ask seen fact rich. Man entrance settling believed eat joy. Money as drift begin on to. Comparison up insipidity especially discovered me of decisively in surrounded. Points six way enough she its father. Folly sex downs tears ham green forty. 
-Building mr concerns servants in he outlived am breeding. He so lain good miss when sell some at if. Told hand so an rich gave next. How doubt yet again see son smart. While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old. 
-Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as. Old disposal followed she ignorant desirous two has. Called played entire roused though for one too. He into walk roof made tall cold he. Feelings way likewise addition wandered contempt bed indulged. 
-                <pre>
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
-                    ö
+            <div class="Landing-content">
+                <h4>Substitut för BankID</h4>
+                <p>Detta är en placeholder som skall immitera BankIDs funktion.<br>
+                var god logga in uppe i höger hörn med ett av de IDs listade här under.<br>
+                <br>
+                ID : bla bla bla<br>
+                ID : bla bla bla<br>
+                ID : bla bla bla<br>
+                ID : bla bla bla<br>
+            </p>
+
+            </div>
 
 
 
-                
-                </pre>    
+        <!---Komplettera body-->    
+            <div class="komplettera-content">
+                <ul class="breadcrumb">
+                    <li><strong>Komplettera</strong></li>
+                    <li>Kontaktinformation</li>
+                    <li>Skicka in</li>
+                  </ul>
+
+                  <div id="bifoga">
+                    <h4>Bifoga dokument</h4>
+                    <p id="bif">Här bifogar du giltiga betygsdokument<br>  till din ansökan.</p>
+                    <p><strong>Välj dokument </strong></p>
+                    <button type="button" id="Väljfil-btn">Välj fil</button>
+                    <p><strong>Beskrivning </strong></p>
+                    <input type="text"><br> 
+                    <button type="button" id="Bifoga-btn">Bifoga</button>
+
+                </div>
+
+                <h4 id="tidutb">Tidigare utbildning</h4>
+                  <div class="selectflex">
+                    <select class="Options" name="options" id="tidutb-sel" onchange="utbInput()">
+                        <option value="Välj">Välj</option>
+                        <option value="Utlänsk utbildning">Utlänsk utbildning</option>
+                        <option value="Svensk grundskola">Svensk grundskola</option>
+                        <option value="Svensk gymnasial utbildning 2 år eller kortare">Svensk gymnasial utbildning 2 år eller kortare</option>
+                        <option value="Svensk gymnasial utbildning längre än 2 år">Svensk gymnasial utbildning längre än 2 år</option>
+                        <option value="Svensk eftergymnasial utbildning">Svensk eftergymnasial utbildning</option>
+                    </select>
+                    <input type="text" placeholder="Antal år?" id="utb-input">
+                </div>
+
+                <h4 id="Nuvsys">Nuvarandra sysselsättning</h4>
+                <div class="selectflex">
+                    <select class="Options" name="options" id="sys-sel" onchange="nuvSysInput()">
+                        <option value="Välj">Välj</option>
+                        <option  value="Arbetar Heltid">Arbetar Heltid</option>
+                        <option  value="Arbetar Deltid">Arbetar Deltid</option>
+                        <option  value="Annat">Annat</option>
+                        <option  value="Arbetssökande">Arbetssökande</option>
+                        <option  value="Risk för arbetslös">Risk för arbetslös</option>
+                        <option  value="Studerar">Studerar</option>
+                    </select>
+                    <input type="text" placeholder="T.ex föräldraledig" id="annat-input">
+                    <input type="text" placeholder="Ange utbildning" id="stud-input">
+                </div>
+
+               <h4 id="tidutb">Utbildningssyfte</h4>
+               <div class="selectflex">
+                <select class="Options" name="options" id="utbsys-sel" onchange="utbSysInput()">
+                    <option  value="Välj">Välj</option>
+                    <option  value="Prövning">Prövning</option>
+                    <option  value="Validera tidigare yrkeserfarenhet">Validera tidigare yrkeserfarenhet</option>
+                    <option  value="Att arbeta med: Administration, ekonomi, juridik">Att arbeta med: Administration, ekonomi, juridik</option>
+                    <option  value="Att arbeta med: Bygg och anläggning">Att arbeta med: Bygg och anläggning</option>
+                    <option  value="Att arbeta med: Data/IT">Att arbeta med: Data/IT</option>
+                    <option  value="Att arbeta med: Fordon och Transport">Att arbeta med: Fordon och Transport</option>
+                    <option  value="Att arbeta med: Försäljning och Handel">Att arbeta med: Försäljning och Handel</option>
+                    <option  value="Att arbeta med: Hantverk och tillverkning">Att arbeta med: Hantverk och tillverkning</option>
+                    <option  value="Att arbeta med: Hotell & Restaurang och kök">Att arbeta med: Hotell & Restaurang och kök</option>
+                    <option  value="Att arbeta med: Hälso- och sjukvård">Att arbeta med: Hälso- och sjukvård</option>
+                    <option  value="Att arbeta med: Kultur, media, design">Att arbeta med: Kultur, media, design</option>
+                    <option  value="Att arbeta med: Pedagogiskt arbete">Att arbeta med: Pedagogiskt arbete</option>
+                    <option  value="Att arbeta med: Socialt arbete">Att arbeta med: Socialt arbete</option>
+                    <option  value="Att arbeta med: Säkerhetsarbete">Att arbeta med: Säkerhetsarbete</option>
+                    <option  value="Att arbeta med: Tekniskt arbete">Att arbeta med: Tekniskt arbete</option>
+                    <option  value="Att arbeta med: Annat yrkesområde">Att arbeta med: Annat yrkesområde</option>
+                    </select>
+                    <input type="text" placeholder="Ange kurs/kurser" id="kurs-input">
+                    <input type="text" placeholder="Ange yrke" id="yrke-input">
+                </div>
+
+                <h4 id="tidutb">Studiemedel</h4>
+                <div class="selectflex">
+                    <select class="Options" name="options" id="stud-sel">
+                    <option  value="Välj">Välj</option>
+                    <option  value="Jag kommer att ansöka om studiemedel">Jag kommer att ansöka om studiemedel</option>
+                    <option  value="Jag kommer inte att ansöka om studiemedel">Jag kommer inte att ansöka om studiemedel</option>
+                    </select>
+                </div>
+
+                <h4 id="tidutb">Studietakt samt önskat startdatum</h4>
+                <div class="selectflex">
+                    <select class="Options" name="options" id="takt-sel">
+                    <option  value="Välj">Välj</option>
+                    <option  value="25%">25%</option>
+                    <option  value="50%">50%</option>
+                    <option  value="75%">75%</option>
+                    <option  value="100%">100%</option>
+                    </select>
+                    <div id="startdatum"></div>
+                </div>
+
+
+                 <p><strong>Motivering</strong> - Varför vill du läsa just den här kursen eller utbildningen?</p>
+                 <textarea name="comment"></textarea>
+
+                 <p><strong>Särskilt stöd</strong> - Är du i behov av extra stöd i studier till exempel pga. läs- och skrivsvårigheter, dyskalkyli, koncentrationssvårigheter eller annan form ange det här.</p>
+                 <textarea name="comment"></textarea>
+
+                <!-- <p><strong>Studietakt</strong> - Skriv önskat startdatum samt om du vill studera på 100, 75, 50 eller 25%.</p>
+                 <textarea name="comment"></textarea> -->
+
+                 <p><strong>Utbildningsmål</strong> - Vad är ditt mål med studierna?</p>
+                 <textarea name="comment"></textarea>
+
+                 <button type="button" onclick="" id="kompl-nästa-btn">Nästa</button>
+
+
+
             </div>
         </div>
 

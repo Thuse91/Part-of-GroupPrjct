@@ -52,3 +52,54 @@ function openHelp() {
     document.querySelector(".please").style.display = "block";
     document.querySelector(".welcome").innerHTML = null;
   }
+
+  function utbInput() {
+    if (document.getElementById("tidutb-sel").value == "Utlänsk utbildning") {
+      document.getElementById("utb-input").style.display = "inline-block"
+    } else {
+      document.getElementById("utb-input").style.display = "none"
+    }
+  }
+
+
+  function utbInput() {
+    if (document.getElementById("tidutb-sel").value == "Utlänsk utbildning") {
+      document.getElementById("utb-input").style.display = "inline-block"
+    } else {
+      document.getElementById("utb-input").style.display = "none"
+    }
+  }
+
+
+  function nuvSysInput() {
+    if (document.getElementById("sys-sel").value == "Annat") {
+      document.getElementById("annat-input").style.display = "inline-block"
+      document.getElementById("stud-input").style.display = "none"
+    } else if (document.getElementById("sys-sel").value == "Studerar"){
+      document.getElementById("stud-input").style.display = "inline-block"
+      document.getElementById("annat-input").style.display = "none"
+    } else {
+      document.getElementById("annat-input").style.display = "none"
+      document.getElementById("stud-input").style.display = "none"
+    }
+  }
+
+  function utbSysInput() {
+    if (document.getElementById("utbsys-sel").value == "Välj") {
+      document.getElementById("kurs-input").style.display = "none"
+      document.getElementById("yrke-input").style.display = "none"
+    } else if (document.getElementById("utbsys-sel").value == "Prövning"){
+      document.getElementById("kurs-input").style.display = "inline-block"
+      document.getElementById("yrke-input").style.display = "none"
+    } else {
+      document.getElementById("kurs-input").style.display = "none"
+      document.getElementById("yrke-input").style.display = "inline-block"
+    }
+  }
+  
+  
+    x = document.createElement("INPUT");
+    x.setAttribute("type", "date");
+    x.setAttribute("value", "2020-01-01");
+    document.getElementById("startdatum").appendChild(x);
+ 

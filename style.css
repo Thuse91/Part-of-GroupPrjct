@@ -48,7 +48,6 @@ header{
 
 
 
-
 /*Lower header with nav */
 .lower-header {
     background: rgb(89,190,255);
@@ -110,6 +109,7 @@ header{
     margin: auto;
 }
 
+/* left bar content */
 .left-bar {
     flex: 2;
     margin: 32px 16px;
@@ -122,15 +122,171 @@ header{
     top: 232px;
 
 }
-
+/* main content */
 .main-content {
+    position: relative;
     flex:6;
     margin: 32px 16px;
     background-color: rgb(252, 252, 252);
     padding: 20px;
     box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
     height: 100%;
-    
+}
+
+
+
+
+
+/* landnings sida / substitut för BankID */
+.Landing-content h4,
+.Landing-content p {
+    text-align: center;
+}
+
+
+
+
+/* komplettera section */
+.komplettera-content {
+    display:none;
+}
+
+.komplettera-content p {
+    margin-left: 20px;
+}
+
+
+/* Sidebar content */
+
+.left-bar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* button styling */
+
+#Bifoga-btn,
+#Väljfil-btn,
+.logIn-btn,
+.logOut-btn,
+#kompl-nästa-btn {
+    background: linear-gradient(180deg, rgba(89,190,255,1) 0%, rgba(34,167,255,1) 20%, #009bff 40%, rgba(0,155,255,1) 60%, rgba(34,167,255,1) 80%, rgba(89,190,255,1) 100%);;
+    color: rgb(247, 247, 247);
+    border: none;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    outline-style: solid;
+    outline-width: thin;
+}
+
+
+#kompl-nästa-btn {
+    margin: 16px 20px;
+}
+
+/* Breadcrumb list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background: linear-gradient(180deg, rgba(89,190,255,1) 0%, rgba(34,167,255,1) 20%, #009bff 40%, rgba(0,155,255,1) 60%, rgba(34,167,255,1) 80%, rgba(89,190,255,1) 100%);
+    color: rgb(247, 247, 247);
+}
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgb(247, 247, 247);
+    content: "/\00a0";
+  }
+
+h3 {
+    margin-left: 13px;
+}
+h4 {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+#bifoga {
+    position: absolute;
+    right: 50px;
+    top: 83px;
+
+}
+
+#bifoga p {
+    margin-left: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#bif {
+    margin-bottom: 16px !important;
+}
+#bifoga button {
+    margin-bottom: 16px;
+}
+
+#bifoga input {
+    margin-bottom: 8px;
+}
+#bifoga h4 {
+    margin-left: 0;
+    margin-bottom: 0px;
+
+}
+
+.options {
+    margin-left: 20px;
+    border: none;
+    width: 300px;
+    padding: 4px 5px;
+    color: rgb(247, 247, 247);
+    outline: none;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+    background: linear-gradient(180deg, rgba(89,190,255,1) 0%, rgba(34,167,255,1) 20%, #009bff 40%, rgba(0,155,255,1) 60%, rgba(34,167,255,1) 80%, rgba(89,190,255,1) 100%);
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.options option {
+    color: black
+}
+
+
+/* input fields display none */
+
+#utb-input,
+#stud-input,
+#annat-input,
+#kurs-input,
+#yrke-input {
+    display:none;
+}
+ 
+/*start datum*/
+
+#startdatum {
+    display: inline-block;
+}
+
+
+textarea {
+    margin-left: 20px;
+    width:95%;
+    max-width: 100%;
+    height: 70px;
+    resize:none;
+    padding: 3px 5px;
 }
 
 
@@ -178,7 +334,7 @@ header{
 }
 
 
-
+/* help buttons */
 .help {
     font-weight:500;
     border: 1px solid rgb(145, 145, 145);
@@ -204,7 +360,7 @@ header{
     color: rgb(241, 241, 241);
 }
 
-
+/* close button */
 .close {
     font-weight:500;
     border: 1px solid rgb(145, 145, 145);
@@ -248,10 +404,6 @@ header{
     display: none;
     opacity: 0.8;
 }
-
-
-
-
 
 /* imported nav border */
 .hvr-reveal {
